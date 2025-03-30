@@ -1,6 +1,6 @@
 negfib_list = []
-calculated_numbers = int(input('Ведите количество элементов списка \n'))
-indices = range(-calculated_numbers, calculated_numbers+1)
+numbers_count = int(input('Ведите количество элементов списка \n'))
+indices = range(-numbers_count, numbers_count+1)
 #print(indices)  
 for i in indices:
     if i < 0: # Для отрицательных индексов

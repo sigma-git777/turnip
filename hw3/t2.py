@@ -1,13 +1,13 @@
 import random
-general_list = []  # основной список
+elements = []  # основной список
 couples = []  # список пар чисел
-calculated_numbers = int(input('Ведите количество элементов списка \n'))
-for x in range(calculated_numbers):
-    general_list.append(random.randint(1, 10))
-print(general_list)
-len_general_list = len(general_list)
+numbers_count = int(input('Ведите количество элементов списка \n'))
+for x in range(numbers_count):
+    elements.append(random.randint(1, 10))
+print(elements)
+len_general_list = len(elements)
 for i in range((len_general_list ) // 2):
-    product = general_list[i] * general_list[-i - 1]
+    product = elements[i] * elements[-i - 1]
     couples.append(product)
 print("Произведения пар:", couples)
 
